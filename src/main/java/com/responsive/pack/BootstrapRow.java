@@ -6,6 +6,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author mrezkyb & riyuner
+ * <p>
+ * This class acts as row inside the Bootstrap Pane class.
+ * To add column in the row use the Creator createColumn instead of declaring the column one by one.
+ * </p>
+ */
+
 public class BootstrapRow {
     public int calculateRowPositions(int lastGridPaneRow, com.responsive.pack.Breakpoint currentWindowSize) {
         int inputRow = lastGridPaneRow;
