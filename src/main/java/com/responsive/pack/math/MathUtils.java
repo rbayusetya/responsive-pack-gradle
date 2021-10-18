@@ -3,6 +3,7 @@ package com.responsive.pack.math;
 public class MathUtils {
 
     /**
+     * @author Rezky Bayusetys & Rifqi Yuner
      * Return an integer between the stated max and min values
      *
      * @param value the value to be clamped

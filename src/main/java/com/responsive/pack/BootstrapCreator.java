@@ -2,6 +2,14 @@ package com.responsive.pack;
 
 import javafx.scene.Node;
 
+/**
+ * @author Rezky Bayusetya & Rifqi Yuner
+ * <p>
+ *  This module is responsible to create a column in a row of BootstrapPane
+ * </p>
+ * @param column return a column with the type of BootstrapColumn.
+ * @param style a column style that has been defined with the type of ColumnStyle
+ */
 public class BootstrapCreator {
     public BootstrapColumn createColumn(Node widget, int style) {
         BootstrapColumn column = new BootstrapColumn(widget);
