@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author mrezkyb & riyuner
  * <p>
  * This class act as base container that behaves like a bootstrap flexbox.
  * Needs bootstrap row and bootstrap column as a child to properly display a child node.
