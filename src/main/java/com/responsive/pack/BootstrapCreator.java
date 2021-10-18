@@ -2,6 +2,10 @@ package com.responsive.pack;
 
 import javafx.scene.Node;
 
+/**
+ * @author mrezkyb & riyuner
+ * <p>This class acts as a creator for column and its corresponding styles.</p>
+ */
 public class BootstrapCreator {
     public BootstrapColumn createColumn(Node widget, int style) {
         BootstrapColumn column = new BootstrapColumn(widget);
