@@ -7,6 +7,15 @@ import javafx.scene.layout.GridPane;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author mrezkyb & riyuner
+ * <p>
+ * This class act as base container that behaves like a bootstrap flexbox.
+ * Needs bootstrap row and bootstrap column as a child to properly display a child node.
+ * </p>
+ * This class extends GridPane class from JavaFX layout.
+ * @see GridPane
+ */
 public class BootstrapPane extends GridPane {
     private Breakpoint currentWindowSize = Breakpoint.XSMALL;
     public BootstrapPane() {
