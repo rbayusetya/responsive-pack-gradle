@@ -5,10 +5,7 @@ import javafx.scene.Node;
 
 /**
  * @author Rezky Bayusetya & Rifqi Yuner
- * <p>
  *  This module contain a method - method that can be accessed for BootstrapColumn
- * </p>
- * @param
  */
 public class BootstrapColumn {
     private final Node content;
@@ -20,14 +17,27 @@ public class BootstrapColumn {
             -1  //XL
     };
 
+    /**
+     *
+     * @param content value of node content
+     */
     public BootstrapColumn(Node content) {
         this.content = content;
     }
 
+    /**
+     *
+     * @param breakPoint value of breakpoint that want to be set
+     * @param width value of width in int with minimum value 1 and maximum value of it 12
+     */
     public void setBreakpointColumnWidth(Breakpoint breakPoint, int width) {
         columnWidths[breakPoint.getValue()] = MathUtils.clamp(width, 1, 12);
     }
 
+    /**
+     *
+     * @param breakPoint value of breakpoint
+     */
     public void unsetBreakPoint(Breakpoint breakPoint) {
         columnWidths[breakPoint.getValue()] = -1;
     }
@@ -42,6 +52,10 @@ public class BootstrapColumn {
         };
     }
 
+    /**
+     * @param breakPoint value of current breakpoint
+     * @return value of first valid breakpoint after iterating or returning the default value which is 1
+     */
     public int getColumnWidth(Breakpoint breakPoint) {
         //Iterate through breakpoints, beginning at the specified bp, travelling down. Return first valid bp value.
         for (int i = breakPoint.getValue(); i >= 0; i--) {
